@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airport Taxi Service in Coorg - Reliable Pickup & Drop</title>
     <meta name="description" content="Reliable airport taxi service in Coorg for Bangalore, Mangalore and other airports. Professional drivers, fixed fares, 24/7 availability. Book your airport transfer now!">
-    <link rel="canonical" href="https://coorggoldenholidays.github.io/airport-taxi-coorg.html">
+    <link rel="canonical" href="/airport-taxi-coorg.html">
     <meta property="og:title" content="Airport Taxi Service in Coorg - Reliable Pickup & Drop">
     <meta property="og:description" content="Reliable airport taxi service in Coorg for Bangalore, Mangalore and other airports. Professional drivers, fixed fares, 24/7 availability.">
-    <meta property="og:image" content="https://coorggoldenholidays.github.io/assets/images/fleet-innova.png">
-    <meta property="og:url" content="https://coorggoldenholidays.github.io/airport-taxi-coorg.html">
+    <meta property="og:image" content="/assets/images/fleet-innova.png">
+    <meta property="og:url" content="/airport-taxi-coorg.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/script.js" defer></script>
@@ -22,9 +22,9 @@
       "provider": {
         "@type": "LocalBusiness",
         "name": "Coorg Golden Holidays",
-        "url": "https://coorggoldenholidays.github.io/",
-        "logo": "https://coorggoldenholidays.github.io/assets/images/hero.png",
-        "image": "https://coorggoldenholidays.github.io/assets/images/fleet-innova.png",
+        "url": "/",
+        "logo": "/assets/images/hero.png",
+        "image": "/assets/images/fleet-innova.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Madikeri",
@@ -39,7 +39,7 @@
           "longitude": "75.7303"
         },
         "telephone": "+91-6360719268",
-        "url": "https://coorggoldenholidays.github.io/",
+        "url": "/",
         "sameAs": [
           "https://www.google.com/search?q=Coorg+Golden+Holidays"
         ],
@@ -65,7 +65,7 @@
       ],
       "availableChannel": {
         "@type": "ServiceChannel",
-        "serviceUrl": "https://coorggoldenholidays.github.io/contact.html",
+        "serviceUrl": "/contact.html",
         "servicePhone": "+91-6360719268",
         "serviceEmail": "mailto:coorggoldenholidays7788@gmail.com"
       }
@@ -75,10 +75,10 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo-link"><div class="logo">
-                <h1>Coorg Golden Holidays</h1>
-                <p>Your Trusted Taxi Service in Coorg</p>
-            </div></a>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Coorg Golden Holidays Logo" class="header-logo">
+                <span class="logo-name">Coorg Golden Holidays</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -265,12 +265,36 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Coorg Golden Holidays</h3>
-                    <p>Madikeri, Kodagu, Karnataka 571201</p>
-                    <p><a href="tel:+916360719268">+91 6360 719 268</a></p>
-                    <p><a href="https://wa.me/916360719268">WhatsApp Us</a></p>
-                    <p>coorggoldenholidays7788@gmail.com</p>
+                <div class="footer-info" itemscope itemtype="https://schema.org/LocalBusiness">
+                    <h3 class="footer-brand" itemprop="name">Coorg Golden Holidays</h3>
+                    <p class="footer-tagline" itemprop="description">Taxi &amp; Cab Services in Coorg</p>
+                    <address class="footer-nap">
+                        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span class="nap-icon">📍</span>
+                            <span itemprop="streetAddress">Madikeri</span>,
+                            <span itemprop="addressLocality">Kodagu (Coorg)</span>,
+                            <span itemprop="addressRegion">Karnataka</span>
+                            <span itemprop="postalCode">571201</span>,
+                            <span itemprop="addressCountry">India</span>
+                        </p>
+                        <p>
+                            <span class="nap-icon">📞</span>
+                            <a href="tel:+916360719268" itemprop="telephone">+91 6360 719 268</a>
+                        </p>
+                        <p>
+                            <span class="nap-icon">💬</span>
+                            <a href="https://wa.me/916360719268" itemprop="telephone">WhatsApp Us</a>
+                        </p>
+                        <p>
+                            <span class="nap-icon">✉️</span>
+                            <span itemprop="email">coorggoldenholidays7788@gmail.com</span>
+                        </p>
+                        <p>
+                            <span class="nap-icon">🕐</span>
+                            <span itemprop="openingHours" content="Mo-Su 00:00-24:00">Open 24 Hours, 7 Days</span>
+                        </p>
+                    </address>
+                    <meta itemprop="priceRange" content="₹500-₹10000">
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>

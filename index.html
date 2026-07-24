@@ -7,12 +7,12 @@
     <title>Coorg Golden Holidays</title>
     <meta name="description"
         content="Professional taxi and cab rental services in Coorg (Kodagu), Karnataka. Airport transfers, sightseeing tours, outstation and local cabs.">
-    <link rel="canonical" href="https://coorggoldenholidays.github.io/">
+    <link rel="canonical" href="/">
     <meta property="og:title" content="Coorg Golden Holidays">
     <meta property="og:description"
         content="Professional taxi and cab rental services in Coorg (Kodagu), Karnataka. Airport transfers, sightseeing tours, outstation and local cabs.">
-    <meta property="og:image" content="https://coorggoldenholidays.github.io/assets/images/hero.png">
-    <meta property="og:url" content="https://coorggoldenholidays.github.io/">
+    <meta property="og:image" content="/assets/images/hero.png">
+    <meta property="og:url" content="/">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/script.js" defer></script>
@@ -22,9 +22,9 @@
       "@context": "https://schema.org/",
       "@type": "LocalBusiness",
       "name": "Coorg Golden Holidays",
-      "url": "https://coorggoldenholidays.github.io/",
-      "logo": "https://coorggoldenholidays.github.io/assets/images/hero.png",
-      "image": "https://coorggoldenholidays.github.io/assets/images/hero.png",
+      "url": "/",
+      "logo": "/assets/images/hero.png",
+      "image": "/assets/images/hero.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Madikeri",
@@ -39,7 +39,7 @@
         "longitude": "75.7303"
       },
       "telephone": "+91-6360719268",
-      "url": "https://coorggoldenholidays.github.io/",
+      "url": "/",
       "sameAs": [
         "https://www.google.com/search?q=Coorg+Golden+Holidays"
       ],
@@ -70,10 +70,10 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo-link"><div class="logo">
-                <h1>Coorg Golden Holidays</h1>
-                <p>Your Trusted Taxi Service in Coorg</p>
-            </div></a>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Coorg Golden Holidays Logo" class="header-logo">
+                <span class="logo-name">Coorg Golden Holidays</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -91,15 +91,66 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Professional Taxi & Cab Services in Coorg</h1>
-                <p>Reliable airport transfers, sightseeing tours, outstation and local cab services across Coorg
-                    (Kodagu), Karnataka.</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/916360719268?text=Hello%20Coorg%20Golden%20Holidays%2C%20I%20would%20like%20to%20book%20a%20taxi%20service."
-                        class="whatsapp-btn">Book on WhatsApp</a>
-                    <a href="tel:+916360719268" class="call-btn">Call Now: +91 6360 719 268</a>
+            <div class="hero-inner container">
+                <!-- Left: Hero Content -->
+                <div class="hero-content">
+                    <span class="hero-badge">⭐ Trusted Travel Partner in Coorg</span>
+                    <h1>Professional Taxi &amp; Cab Services in <span>Coorg</span></h1>
+                    <p>Reliable airport transfers, sightseeing tours, outstation &amp; local cabs across Kodagu, Karnataka.</p>
+                    <ul class="hero-features">
+                        <li>✅ Professional Drivers</li>
+                        <li>✅ Safe &amp; Reliable</li>
+                        <li>✅ Transparent Pricing</li>
+                        <li>✅ 24/7 Service</li>
+                    </ul>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/916360719268?text=Hello%20Coorg%20Golden%20Holidays%2C%20I%20would%20like%20to%20book%20a%20taxi%20service." class="whatsapp-btn">📱 Book on WhatsApp</a>
+                        <a href="tel:+916360719268" class="call-btn">📞 Call Now</a>
+                    </div>
                 </div>
+
+                <!-- Right: Quick Enquiry Form -->
+                <div class="hero-form-card">
+                    <div class="hero-form-header">
+                        <h2>Quick Booking</h2>
+                        <p>Get a free quote in minutes!</p>
+                    </div>
+                    <form id="whatsapp-form" class="hero-form">
+                        <div class="hero-form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="E.g. Rahul Kumar" required>
+                        </div>
+                        <div class="hero-form-group">
+                            <label for="phone">Phone / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="hero-form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="airport">✈️ Airport Pickup / Drop</option>
+                                <option value="sightseeing">🏔️ Sightseeing Tour</option>
+                                <option value="outstation">🚗 Outstation Cab</option>
+                                <option value="local">📍 Local Cab</option>
+                            </select>
+                        </div>
+                        <div class="hero-form-group">
+                            <label for="date">Travel Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <button type="submit" class="hero-form-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Banner -->
+        <section class="promo-banner-section">
+            <div class="promo-single">
+                <img src="assets/images/coorggoldenholidaysbanner.jpg" alt="Coorg Golden Holidays - Explore Coorg in Comfort &amp; Style - All Vehicles Available">
             </div>
         </section>
 
@@ -158,58 +209,19 @@
                 <h2>Contact Us</h2>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>Phone / WhatsApp</h3>
+                        <h3>📞 Phone / WhatsApp</h3>
                         <p><a href="tel:+916360719268">+91 6360 719 268</a></p>
                         <p><a href="https://wa.me/916360719268">WhatsApp Us</a></p>
                     </div>
                     <div class="contact-item">
-                        <h3>Email</h3>
+                        <h3>✉️ Email</h3>
                         <p>coorggoldenholidays7788@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <h3>Address</h3>
+                        <h3>📍 Address</h3>
                         <p>Madikeri, Kodagu, Karnataka 571201</p>
                     </div>
                 </div>
-
-                <h3>Quick Enquiry Form</h3>
-                <form id="whatsapp-form" class="whatsapp-form">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="pickup">Pickup Location *</label>
-                        <input type="text" id="pickup" name="pickup" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="drop">Drop Location *</label>
-                        <input type="text" id="drop" name="drop" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Date *</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="passengers">Number of Passengers *</label>
-                        <input type="number" id="passengers" name="passengers" min="1" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Type *</label>
-                        <select id="service" name="service" required>
-                            <option value="">Select Service Type</option>
-                            <option value="airport">Airport Pickup & Drop</option>
-                            <option value="sightseeing">Sightseeing Cabs / Tour Packages</option>
-                            <option value="outstation">Outstation Cabs</option>
-                            <option value="local">Local Cabs</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="whatsapp-btn">Send Enquiry via WhatsApp</button>
-                </form>
             </div>
         </section>
     </main>
@@ -217,12 +229,36 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Coorg Golden Holidays</h3>
-                    <p>Madikeri, Kodagu, Karnataka 571201</p>
-                    <p><a href="tel:+916360719268">+91 6360 719 268</a></p>
-                    <p><a href="https://wa.me/916360719268">WhatsApp Us</a></p>
-                    <p>coorggoldenholidays7788@gmail.com</p>
+                <div class="footer-info" itemscope itemtype="https://schema.org/LocalBusiness">
+                    <h3 class="footer-brand" itemprop="name">Coorg Golden Holidays</h3>
+                    <p class="footer-tagline" itemprop="description">Taxi &amp; Cab Services in Coorg</p>
+                    <address class="footer-nap">
+                        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span class="nap-icon">📍</span>
+                            <span itemprop="streetAddress">Madikeri</span>,
+                            <span itemprop="addressLocality">Kodagu (Coorg)</span>,
+                            <span itemprop="addressRegion">Karnataka</span>
+                            <span itemprop="postalCode">571201</span>,
+                            <span itemprop="addressCountry">India</span>
+                        </p>
+                        <p>
+                            <span class="nap-icon">📞</span>
+                            <a href="tel:+916360719268" itemprop="telephone">+91 6360 719 268</a>
+                        </p>
+                        <p>
+                            <span class="nap-icon">💬</span>
+                            <a href="https://wa.me/916360719268" itemprop="telephone">WhatsApp Us</a>
+                        </p>
+                        <p>
+                            <span class="nap-icon">✉️</span>
+                            <span itemprop="email">coorggoldenholidays7788@gmail.com</span>
+                        </p>
+                        <p>
+                            <span class="nap-icon">🕐</span>
+                            <span itemprop="openingHours" content="Mo-Su 00:00-24:00">Open 24 Hours, 7 Days</span>
+                        </p>
+                    </address>
+                    <meta itemprop="priceRange" content="₹500-₹10000">
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -271,46 +307,34 @@
 
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            const pickup = document.getElementById('pickup').value;
-            const drop = document.getElementById('drop').value;
-            const date = document.getElementById('date').value;
-            const passengers = document.getElementById('passengers').value;
             const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
 
-            let serviceText = '';
-            switch (service) {
-                case 'airport':
-                    serviceText = 'Airport Pickup & Drop';
-                    break;
-                case 'sightseeing':
-                    serviceText = 'Sightseeing Cabs / Tour Packages';
-                    break;
-                case 'outstation':
-                    serviceText = 'Outstation Cabs';
-                    break;
-                case 'local':
-                    serviceText = 'Local Cabs';
-                    break;
-                default:
-                    serviceText = 'Taxi Service';
-            }
+            const serviceLabels = {
+                airport: 'Airport Pickup / Drop',
+                sightseeing: 'Sightseeing Tour',
+                outstation: 'Outstation Cab',
+                local: 'Local Cab'
+            };
+            const serviceText = serviceLabels[service] || 'Taxi Service';
 
-            const message = `Hello Coorg Golden Holidays,
-            
-Name: ${name}
-Phone: ${phone}
-Pickup Location: ${pickup}
-Drop Location: ${drop}
-Date: ${date}
-Number of Passengers: ${passengers}
-Service Type: ${serviceText}
+            // Format date from YYYY-MM-DD to DD-MM-YYYY
+            const [yyyy, mm, dd] = date.split('-');
+            const formattedDate = `${dd}-${mm}-${yyyy}`;
 
-Please provide availability and fare details.`;
+            const message = `Hello Coorg Golden Holidays! 🙏
+
+I'd like to book a taxi service.
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+🚖 Service: ${serviceText}
+📅 Travel Date: ${formattedDate}
+
+Kindly share availability and fare details. Thank you!`;
 
             const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/916360719268?text=${encodedMessage}`;
-
-            window.open(whatsappUrl, '_blank');
+            window.open(`https://wa.me/916360719268?text=${encodedMessage}`, '_blank');
         });
     </script>
 </body>
